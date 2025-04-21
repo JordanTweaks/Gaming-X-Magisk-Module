@@ -14,7 +14,6 @@ A Magisk module designed to optimize Android gaming performance by tweaking CPU,
 ## Screenshots
 ![Performance Boost](screenshots/screenshot1.png)
 ![FPS Improvement](screenshots/screenshot2.png)
-![Settings Applied](screenshots/screenshot3.png)
 
 ## Requirements
 - Rooted Android device with Magisk v20.0 or higher.
