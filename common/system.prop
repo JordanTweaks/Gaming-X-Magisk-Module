@@ -1,0 +1,97 @@
+# This file will be read by resetprop
+
+# RAM Optimization
+persist.sys.purgeable_assets=1
+ro.config.low_ram=false
+ro.kernel.android.checkjni=0
+persist.sys.zram_enabled=1
+ro.sys.fw.bg_apps_limit=32
+ro.sys.fw.trim_enable_memory=true
+dalvik.vm.verify-bytecode=false
+debug.kill_allocating_task=0
+ENFORCE_PROCESS_LIMIT=false
+
+# CPU Performance
+debug.performance.tuning=1
+persist.sys.NV_FPSLIMIT=0
+persist.sys.NV_POWERMODE=1
+persist.sys.NV_STEREO_CONTROL=0
+persist.sys.NV_STEREO_EYES=0
+
+# GPU Optimization (Adreno)
+debug.egl.buffcount=3
+debug.egl.swapinterval=0
+debug.hwui.renderer=skiagl
+debug.hwui.use_vulkan=true
+persist.sys.ui.hw=1
+debug.sf.latch_unsignaled=1
+debug.sf.disable_backpressure=1
+debug.egl.hw=1
+debug.sf.hw=1
+ro.product.gpu.driver=1
+video.accelerate.hw=1
+debug.gr.swapinterval=0
+persist.sys.use_dithering=0
+debug.gralloc.gfx_ubwc_disable=0
+debug.composition-type=hybrid
+persist.sys.composer.preferred_mode=performance
+
+# Game Mode / High FPS
+debug.cpurend.dynamicfps=true
+debug.cpurend.fpslimit=120
+debug.cpurend.fpsmin=60
+debug.sf.fps=120
+debug.display.max_fps=120
+ro.surface_flinger.use_content_detection_for_refresh_rate=false
+
+# Enhance
+vendor.perf.framepacing.enable=1
+ro.vendor.display.default_fps=120
+ro.vendor.display.type=oled
+vendor.display.vds_allow_hwc=1
+vendor.display.enable_optimize_refresh=1
+vendor.display.use_smooth_motion=1
+vendor.display.idle_time=0
+debug.sf.treat_170m_as_sRGB=1
+persist.vendor.dfps.level=120
+ro.vendor.dfps.enable=false
+ro.vendor.smart_dfps.enable=false
+
+# Touch Optimization
+persist.sys.scrollingcache=0
+ro.max.fling_velocity=30000
+ro.min.fling_velocity=12000
+ro.min_pointer_dur=8
+sys.use_fifo_ui=1
+windowsmgr.max_event_per_sec=1000
+touch.size.calibration=geometric
+touch.pressure.scale=0.001
+persist.sys.ui.hw=true
+persist.sys.force_hw_ui=true
+
+# Qualcomm Snapdragon Tweaks
+debug.qctwa.statusbar=1
+debug.qctwa.preservebuf=1
+
+# 3D Optimizations
+hw3d.force=1
+hw2d.force=1
+
+# Liquid Smooth UI
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+
+# FPS Stability
+debug.sf.enable_hwc_vds=0
+debug.sf.early_phase_offset_ns=250000
+debug.sf.early_app_phase_offset_ns=250000
+debug.sf.early_gl_phase_offset_ns=1500000
+debug.sf.early_gl_app_phase_offset_ns=7500000
+debug.sf.high_fps_early_phase_offset_ns=3000000
+debug.sf.high_fps_early_gl_phase_offset_ns=500000
+debug.sf.high_fps_late_app_phase_offset_ns=50000
+debug.sf.phase_offset_threshold_for_next_vsync_ns=3000000
+debug.sf.showupdates=0
+debug.sf.showcpu=0
+debug.sf.showbackground=0
+debug.sf.showfps=0
