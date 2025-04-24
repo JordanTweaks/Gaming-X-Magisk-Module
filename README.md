@@ -43,5 +43,5 @@ Feel free to submit issues or pull requests to improve the module. See [CONTRIBU
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
 ## Credits
-- Developed by [YourGitHubUsername](https://github.com/YourGitHubUsername)
+- Developed by [YourGitHubUsername](https://github.com/JordanTweaks)
 - Inspired by various Magisk modules and XDA community tweaks.
